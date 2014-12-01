@@ -1,0 +1,9 @@
+mount -vt proc proc /proc
+mount -vt sysfs sysfs /sys
+mount -vt devpts devpts /dev/pts
+mount -vt tmpfs -o size=100m none /mnt/tmpfs
+sleep 5
+mount -vt ext4 /dev/block/mmcblk1p1 /system
+mount --bind /system/data /data
+export PATH=$PATH:/system/xbin:/system/bin
+/bin/sh

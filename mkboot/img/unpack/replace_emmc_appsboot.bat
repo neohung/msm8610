@@ -1,0 +1,3 @@
+fastboot flash aboot emmc_appsboot_with_uart_no_check_battery.mbn
+fastboot reboot
+pause

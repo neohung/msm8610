@@ -1,0 +1,6 @@
+&soc {
+       neo{
+                compatible = "neo";
+                gpio = <72>;
+        };
+};

@@ -1,0 +1,16 @@
+#
+# Light sensors
+#
+menu "Light sensors"
+
+config SENSORS_CM3218
+        tristate "CM3218 Ambient Light Sensor"
+        depends on I2C
+        help
+         Say Y here if you have a Capella Micro CM3218 Ambient Light Sensor.
+
+         To compile this driver as a module, choose M here.  This module
+         will be called to 'cm3218'.  It will access ALS data via iio sysfs.
+         This is recommended.
+
+endmenu
